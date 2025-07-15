@@ -1,0 +1,15 @@
+# Password-Generator
+import random
+s_alpha="abcdefghijklmnopqrstuvwxyz"
+b_alpha='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+num='0123456789'
+symbols='!@#$%&_-'
+
+add=s_alpha+b_alpha+num+symbols
+length=int(input("Enter Password Length:"))
+
+for i in range(5):
+   password="".join(random.sample(add,length))
+   print("Your generated password : ",password)
+
+
